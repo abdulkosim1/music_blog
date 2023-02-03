@@ -23,6 +23,10 @@ urlpatterns = [
     path('music/', get_musics),
     path('music/<int:id>/', get_song),
     path('music/create/', add_music),
+    path('music/delete/<int:id>/', delete_music),
+    path('music/update/<int:id>/', music_update),
+
+    path('music/class/', MusicVeiw.as_view()),
 
 
 ]
